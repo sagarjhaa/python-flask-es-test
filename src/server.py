@@ -134,7 +134,7 @@ def search():
 @app.route('/api/search_autocomplete')
 def search_autocomplete():
     query = request.args.get('q', '')
-    category = request.args.get('category', '')
+    category = request.args.get('category', '')  #it can be gene,go,disease
     field = request.args.get('field', 'name_key')
 
     if query == '':
