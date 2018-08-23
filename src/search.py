@@ -205,7 +205,7 @@ def format_search_results(search_results, json_response_fields):
 
     return formatted_results
 
-
+# Build es query for autocomplete in the searchbox
 def build_autocomplete_search_body_request(query, category='gene', field='name_key'):
     es_query = {
         "query": {
@@ -253,7 +253,7 @@ def build_autocomplete_search_body_request(query, category='gene', field='name_k
 
     return es_query
 
-
+# format the output of es autocomplete query result
 def format_autocomplete_results(es_response, field='name_key'):
     formatted_results = []
 
