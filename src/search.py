@@ -124,6 +124,8 @@ def build_search_query(query, search_fields, category, category_filters, args):
     return query
 
 
+# Internal function
+# Used in build_search_query
 def build_search_params(query, search_fields):
     if query is "":
         es_query = {"match_all": {}}
@@ -170,7 +172,8 @@ def build_search_params(query, search_fields):
 
     return es_query
 
-
+# Internal function
+# Used in format_search_results (formatting the results)
 def filter_highlighting(highlight):
     if highlight is None:
         return None
