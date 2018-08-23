@@ -13,13 +13,13 @@ class Layout extends Component {
     return (
       <div className={style.appContainer}>
         <div className={`alert alert-info ${style.appAlert}`} role='alert'>
-          This website is a prototype and information may not be verified.
+          {/* This website is a prototype and information may not be verified. */}
         </div>
         <div className={style.topHeader}>
           <div className='row'>
             <div className={SMALL_COL_CLASS}>
               <Link to='/'>
-                <img className={style.logo} src={logo} />
+                {/* <img className={style.logo} src={logo} /> */}
               </Link>
             </div>
             <div className={LARGE_COL_CLASS} />
